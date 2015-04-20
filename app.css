@@ -1,0 +1,58 @@
+body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	background: black;
+	cursor: crosshair;
+}
+
+#threed{
+	position: relative;
+	border: 1px solid gray;
+	margin: 0 auto;
+	transition: 1s ease opacity;
+	-webkit-transition: 1s ease opacity;
+}
+
+#winmsg, #losemsg {
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 800px;
+	height: 500px;
+	z-index: 2;
+	text-align: center;
+	padding: 50px;
+	font-family: Courier, monospace;
+	display: none;
+	opacity: 0;
+	transition: 1s ease opacity;
+	-webkit-transition: 1s ease opacity;
+}
+
+#winmsg{
+	color: #00ff00;
+	background: url('img/space.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+#losemsg{
+	color: #ff0000;
+	background: url('img/tardigrade.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+#winmsg div{
+	margin: 10px;
+}
+
+#losemsg div{
+	margin: 10px;
+}
+
+a:visited{
+	color: #ff0000;
+}

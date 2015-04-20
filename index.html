@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Planet Cleaner</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<canvas id="threed" width="900" height="600"></canvas>
+
+	<div id="winmsg">
+		<h1>YOU WON!</h1>
+		<div>Thanks for playing Space Cleaner!</div>
+
+		<div>
+			<a href="http://hypothete.com" target="blank">more stuff by hypothete</a>
+		</div>
+		<div>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="I survived a spaceship crash & hungry tardigrades in Space Cleaner!" data-via="Hypothete" data-size="large" data-hashtags="LDJAM">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</div>
+		<div id="replay" ><a onclick="window.location.reload()" href="#">play again?</a></div>
+	</div>
+
+	<div id="losemsg">
+		<h1>YOU LOST</h1>
+		
+		<div id="replay" onclick="window.location.reload()"><a href="#">play again?</a></div>
+
+	</div>
+
+	<script src="node_modules/three/three.min.js"></script>
+
+	<script src="js/billboard.js"></script>
+	<script src="js/player.js"></script>
+	<script src="js/controls.js"></script>
+	<script src="js/monster.js"></script>
+	<script src="js/intro.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "LD32",
+  "version": "0.0.0",
+  "description": "3D game for Ludum Dare 32.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Duncan Alexander (@hypothete)",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.70.0"
+  }
+}
