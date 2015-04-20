@@ -189,7 +189,7 @@ function makeWalls(x, z){
 	var border = 4;
 	for(var i=0; i<x+border; i++){
 		for(var j=0; j<z+border; j++){
-			if((i===0)||(i==x+1)||(j===0)||(j==z+1)) {
+			if(((i===0)||(i==x+1)||(j===0)||(j==z+1)) && Math.random() > 0.5) {
 				var bill = new Billboard('img/tall.png', new THREE.Vector3(i*2-(x+border*Math.random())|0, 4, j*2-(z+border*Math.random())), 1024, 1024);
 				scene.add(bill);
 				

@@ -2,7 +2,6 @@
 
 'use strict';
 
-
 function Billboard(textureURL, position, width, height){
 
 	var billboard = new THREE.Sprite(new THREE.SpriteMaterial({
@@ -12,7 +11,6 @@ function Billboard(textureURL, position, width, height){
 					transparent: true,
 					fog: true
 				}));
-
 	billboard.material.map.magFilter = billboard.material.map.minFilter = THREE.NearestFilter;
 	billboard.material.needsUpdate = true;
 	billboard.position.copy(position);
